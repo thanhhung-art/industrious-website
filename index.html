@@ -40,7 +40,25 @@
 	</section>
 
 	
+	<script type="text/javascript">
+		let menuBtn = document.getElementById("menuBtn");
+		let btn = document.getElementById("btn");
+		let menu = document.getElementById("menu");
+		let a = 1;
 
+		menu.style.right = "-250px";
+
+		menuBtn.onclick = () => {
+			if(menu.style.right == "-250px"){
+				menu.style.right = "0";
+				btn.src = "images/close.png";
+			}
+			else{
+				menu.style.right = "-250px";
+				btn.src = "images/menu.png";
+			}
+		}
+	</script>
 	
 
 </body>
